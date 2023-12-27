@@ -1,10 +1,8 @@
-import 'package:animated_toast_list/animated_toast_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 import 'package:getx_sample_movie_app/common/app_color.dart';
 import 'package:getx_sample_movie_app/common/app_path.dart';
-import 'package:getx_sample_movie_app/main.dart';
 import 'package:getx_sample_movie_app/widgets/lable_input_text.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -55,19 +53,6 @@ class LoginContent extends GetWidget<LoginController> {
               const SizedBox(height: 29),
               WidgetBottomRadius(
                   onCallBack: () {
-                    // if (controller.emailController.text.isEmpty) {
-                    //   context.showToast(ToastModel(
-                    //       type: ToastType.failed,
-                    //       message: 'Email cannot be left blank'));
-                    //   return;
-                    // }
-                    // if (controller.passwordController.text.isEmpty) {
-                    //   context.showToast(ToastModel(
-                    //       type: ToastType.failed,
-                    //       message: 'Password cannot be left blank'));
-                    //   return;
-                    // }
-
                     controller.signIn(context);
                   },
                   titleButtom: 'Sign In',

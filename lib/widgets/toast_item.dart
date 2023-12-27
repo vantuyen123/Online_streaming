@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:getx_sample_movie_app/common/app_color.dart';
-import 'package:getx_sample_movie_app/main.dart';
+import 'package:getx_sample_movie_app/global/enum/enum.dart';
+import 'package:getx_sample_movie_app/utils/toast_model.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class ToastItem extends StatelessWidget {

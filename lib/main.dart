@@ -4,6 +4,8 @@ import 'package:get/get_navigation/get_navigation.dart';
 import 'package:getx_sample_movie_app/common/app_router.dart';
 import 'package:getx_sample_movie_app/widgets/toast_item.dart';
 
+import 'utils/toast_model.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -42,13 +44,4 @@ class MyApp extends StatelessWidget {
       ),
     );
   }
-}
-
-enum ToastType { success, failed, warning, info, error }
-
-class ToastModel {
-  String? message;
-  ToastType type;
-
-  ToastModel({this.message, required this.type});
 }
