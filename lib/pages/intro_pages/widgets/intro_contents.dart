@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx_sample_movie_app/common/app_color.dart';
-import 'package:getx_sample_movie_app/common/app_router.dart';
 import 'package:getx_sample_movie_app/pages/intro_pages/intro_controller.dart';
 import 'package:getx_sample_movie_app/widgets/widget_bottom_radius.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -83,7 +82,7 @@ class IntroContents extends GetWidget<IntroController> {
                             )))),
                 const SizedBox(height: 19),
                 WidgetBottomRadius(
-                    onCallBack: () => Get.toNamed(AppRouter.routerLoginPage),
+                    onCallBack: controller.openLogin,
                     titleButtom: 'Get Started')
               ],
             ),
